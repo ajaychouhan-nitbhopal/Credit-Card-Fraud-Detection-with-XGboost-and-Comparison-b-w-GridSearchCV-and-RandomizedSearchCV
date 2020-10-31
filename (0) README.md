@@ -1,5 +1,6 @@
 # Credit-Card-Fraud-Detection-with-XGboost-Comparison-b-w-GridSearchCV-RandomizedSearchCV
 ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2Fajaychouhan-nitbhopal%2FCredit-Card-Fraud-Detection-with-XGboost-and-Comparison-b-w-GridSearchCV-and-RandomizedSearchCV)
+
 This is a XGboost classifier model for Credit Card Fraud Detection on Anonymized features dataset. Hyperparameters of the models are tuned with GridSearchCV and RandomizedSearchCV and Comparison is also done between them.
 
 ## Dataset Overview (by Kaggle)
