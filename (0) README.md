@@ -13,7 +13,15 @@ It contains only numerical input variables which are the result of a PCA transfo
 
 This is the code of XGboost Classifier which is implemented on Credit Card Fraud Detection Anonymized features dataset. Hyperparameter tuning is done with GridSearchCV and RandomizedSearchCV. Comparison with visual representation is done on all results.
 
-Train set is of 227845 transactions and Test set is of 56962 transactions. f1-score of 0.88 is achieved by both GridSearchCV and RandomizedSearchCV Hyperparameter tuning on X_test set, But GridSearchCV takes half time in comparison with RandomizedSearchCV and alsoa GridSearchCV took only 4 Hyperparameters' values while RandomizedSearchCV took 13 Hyperparameters' values.
+Train set is of 227845 transactions and Test set is of 56962 transactions. The f1-score of 0.89 is achieved by RandomizedSearchCV Hyperparameter tuning on X_test set.
+
+Randomized Search CV approach of Hyperparameter tuning gave better results but in more time (with 13 parameters distribution). Grid Search CV takes more time and computation power when grid is bigger, so I used only 5 numbers of parameters in parameter grid. Although Randomized Search CV took more time but it covers more parameters.
+
+With the same grid size of parameters, Grid Search CV takes very much time, so this is prohibited for bigger grids.
+
+RandomizedSearchCV always gives different results. I ran this 4 times and 0.89 was the best f1-score I got on the x_test set.
+
+In this notebook I focused more on Understanding the data with visualization and RandomizedSearchCV & GridSearchCV approaches of Hyper parameters tuning. Although better f1-score can be achieved by providing more parameters to these two approaches but it will be cost more time and computational power.
 
 You can find abovementioned dataset [here](https://www.kaggle.com/mlg-ulb/creditcardfraud)
 
@@ -34,11 +42,10 @@ You can find abovementioned dataset [here](https://www.kaggle.com/mlg-ulb/credit
 Install missing dependencies with [pip](https://pip.pypa.io/en/stable/)
 
 ## Usage
-1. Credit_Card_Fraud_Detection_with_XGboost_&_Comparision_of_Hyperparameter_tuning_with_GridSearchCV_&_RandomizedSearchCV.ipynb is Jupyter Notebook which contains classifier model and comparision of GridSearchCV & RandomizedSearchCV Models.
-2. credit_card_fraud_detection_with_xgboost_&_comparision_of_hyperparameter_tuning_with_gridsearchcv_&_randomizedsearchcv.py is Python file which contains python code of point no. 1 Jupyter notebook.
+1. XGboost Classifier model with Hyperparameter tuning notebook.ipynb is Jupyter Notebook which contains classifier model and comparision of GridSearchCV & RandomizedSearchCV Models.
+2. conclusion.csv contains outputs of xgboost models of notebook. This file is made by me and I used it to plot various conclusive plots in jupyter notebook.
 3. Dataset.txt is a txt file which contains link of kaggle dataset which is used in this classifier.
-4. Final_conclusion.csv contains outputs of xgboost models of notebook. This file is made by me and I used it to plot various conclusive plots in jupyter notebook.
-5. Correlation matrix of all features is a png file which contains Correlation matrix of all columns of the dataset to understand and visualize the data in a better way.
+4. Correlation matrix of all features is a png file which contains Correlation matrix of all columns of the dataset to understand and visualize the data in a better way.
 
 Install jupyter [here](https://jupyter.org/install).
 
