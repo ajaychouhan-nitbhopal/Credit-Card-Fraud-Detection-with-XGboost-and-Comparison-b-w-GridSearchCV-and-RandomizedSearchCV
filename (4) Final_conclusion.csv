@@ -1,4 +1,0 @@
-model,xtest_precision,xtest_recall,xtest_f1score,xtest_true_negative,xtest_false_negative,xtest_false_positive,xtest_true_positive,X_test_accuracy,x_precision,x_recall,x_f1score,x_true_negative,x_false_negative,x_false_positive,x_true_positive,X_accuracy,time_taken
-default,0.92,0.81,0.86,56857,7,19,79,0.9995435553526912,0.94,0.82,0.88,284288,27,87,405,0.9995997289392465,41.04
-grid_search_cv,0.95,0.82,0.88,56860,4,18,80,0.9996137776061234, 0.98,0.93,0.96,284306,9,32,460, 0.999856042864115,1125.37
-randomized_search_cv,0.95,0.81,0.87,56860,4,19,79,0.9995962220427653,0.98,0.93,0.96,284305,0,33,459, 0.9998490205648035, 2687.09
