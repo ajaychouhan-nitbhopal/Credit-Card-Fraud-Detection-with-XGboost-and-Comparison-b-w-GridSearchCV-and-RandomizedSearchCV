@@ -15,7 +15,7 @@ This is the code of XGboost Classifier which is implemented on Credit Card Fraud
 
 Train set is of 227845 transactions and Test set is of 56962 transactions. f1-score of 0.88 is achieved by both GridSearchCV and RandomizedSearchCV Hyperparameter tuning on X_test set, But GridSearchCV takes half time in comparison with RandomizedSearchCV and alsoa GridSearchCV took only 4 Hyperparameters' values while RandomizedSearchCV took 13 Hyperparameters' values.
 
-You can find abovementioned dataset [here](https://www.kaggle.com/jayfaldu/creditcard-fraud-detection)
+You can find abovementioned dataset [here](https://www.kaggle.com/mlg-ulb/creditcardfraud)
 
 ## Dependencies
 
@@ -43,4 +43,4 @@ Install missing dependencies with [pip](https://pip.pypa.io/en/stable/)
 Install jupyter [here](https://jupyter.org/install).
 
 ## Credits
-This problem is taken from [Kaggle.com](https://www.kaggle.com/jayfaldu/creditcard-fraud-detection)
+This problem is taken from [Kaggle.com](https://www.kaggle.com/mlg-ulb/creditcardfraud)
